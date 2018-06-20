@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PartTimeJob</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="setting">Setting</string>
+    <string name="notifyTitle">Tip</string>
+    <string name="notifyMsg">The necessary permissions are currently missing</string>
+
+    <string name="login_submit">登录</string>
+    <string name="login_name">登录名</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_error">用户名及密码不能为空</string>
+    <string name="index">首页</string>
+    <string name="project">项目</string>
+    <string name="tongji">统计</string>
+    <string name="zixun">资讯</string>
+    <string name="wode">我的</string>
+
+</resources>

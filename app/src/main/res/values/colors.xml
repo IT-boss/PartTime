@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorTheme">#2EBB91</color>
+    <color name="colorThemeDark">#228571</color>
+
+    <color name="colorText">#666666</color>
+    <color name="textSearch">#189988</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blackLight">#DDDDDD</color>
+    <color name="PageBg">#F4F4F4</color>
+    <color name="alphaBlack">#66000000</color>
+
+    <color name="scanBgColor">#ECF8F4</color>
+    <color name="textBgColor">#78D2AE</color>
+
+    <color name="dividerLineColor">#DDDDDD</color>
+
+
+</resources>

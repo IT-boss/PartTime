@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PageBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorTheme"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/index_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_white_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="西安"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/index_edittext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/edit_login_bg"
+            android:hint="城市/职位"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:id="@+id/index_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_white_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="搜索"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/index_banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/index_item1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_complaint"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item" />
+
+            <TextView
+                android:id="@+id/index_item2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_complaint"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item" />
+
+            <TextView
+                android:id="@+id/index_item3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_complaint"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item" />
+
+            <TextView
+                android:id="@+id/index_item4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_complaint"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/index_item5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_complaint"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item" />
+
+            <TextView
+                android:id="@+id/index_item6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_complaint"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item" />
+
+            <TextView
+                android:id="@+id/index_item7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_complaint"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item" />
+
+            <TextView
+                android:id="@+id/index_item8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_complaint"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="item" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/index_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!--兼职/推广/广告 大概比例 17:2：1-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/index_recycler_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+</LinearLayout>

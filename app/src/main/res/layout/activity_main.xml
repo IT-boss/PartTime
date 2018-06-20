@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackLight" />
+
+    <LinearLayout
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/index"
+            style="@style/tab_text"
+            android:drawableTop="@drawable/tab_index"
+            android:tag="0"
+            android:text="@string/index" />
+
+        <TextView
+            android:id="@+id/news"
+            style="@style/tab_text"
+            android:drawableTop="@drawable/tab_project"
+            android:tag="1"
+            android:text="@string/zixun" />
+
+        <TextView
+            android:id="@+id/mine"
+            style="@style/tab_text"
+            android:drawableTop="@drawable/tab_mine"
+            android:tag="2"
+            android:text="@string/wode" />
+    </LinearLayout>
+
+</LinearLayout>
