@@ -64,14 +64,14 @@ public class IndexFragment extends Fragment {
     TextView mItem3;
     @BindView(R.id.index_item4)
     TextView mItem4;
-    @BindView(R.id.index_item5)
-    TextView mItem5;
-    @BindView(R.id.index_item6)
-    TextView mItem6;
-    @BindView(R.id.index_item7)
-    TextView mItem7;
-    @BindView(R.id.index_item8)
-    TextView mItem8;
+//    @BindView(R.id.index_item5)
+//    TextView mItem5;
+//    @BindView(R.id.index_item6)
+//    TextView mItem6;
+//    @BindView(R.id.index_item7)
+//    TextView mItem7;
+//    @BindView(R.id.index_item8)
+//    TextView mItem8;
     @BindView(R.id.index_banner)
     Banner mBanner;
     @BindView(R.id.index_refresh)
@@ -143,7 +143,7 @@ public class IndexFragment extends Fragment {
     }
 
     @OnClick({R.id.index_city, R.id.index_check, R.id.index_item1, R.id.index_item2, R.id.index_item3,
-            R.id.index_item4, R.id.index_item5, R.id.index_item6, R.id.index_item7, R.id.index_item8})
+            R.id.index_item4/*, R.id.index_item5, R.id.index_item6, R.id.index_item7, R.id.index_item8*/})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.index_city:
@@ -164,7 +164,7 @@ public class IndexFragment extends Fragment {
             case R.id.index_item4:
 
                 break;
-            case R.id.index_item5:
+            /*case R.id.index_item5:
 
                 break;
             case R.id.index_item6:
@@ -175,7 +175,7 @@ public class IndexFragment extends Fragment {
                 break;
             case R.id.index_item8:
 
-                break;
+                break;*/
         }
     }
 

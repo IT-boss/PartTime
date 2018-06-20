@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:background="@color/colorTheme"
         android:orientation="vertical">
 
@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_margin="15dp"
+            android:layout_margin="10dp"
             android:background="@drawable/button_white_bg"
             android:paddingBottom="5dp"
             android:paddingLeft="10dp"
@@ -27,8 +27,8 @@
 
         <phxg.com.parttimejob.view.CircleImageView
             android:id="@+id/user_photo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:src="@mipmap/hcw" />
 
@@ -43,100 +43,108 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:background="@color/PageBg"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/mine_lishi"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/white"
-            android:drawableRight="@mipmap/sms_arrow_right"
-            android:gravity="center_vertical"
-            android:paddingLeft="20dp"
-            android:text="兼职历史"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/mine_xinyong"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="1dp"
-            android:background="@color/white"
-            android:drawableRight="@mipmap/sms_arrow_right"
-            android:gravity="center_vertical"
-            android:paddingLeft="20dp"
-            android:text="兼职信用"
-            android:textSize="20sp" />
+        android:layout_weight="5"
+        android:background="@color/PageBg">
 
         <LinearLayout
-            android:id="@+id/mine_yongjin"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="我的佣金"
+                android:id="@+id/mine_lishi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:drawableRight="@mipmap/sms_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="兼职历史"
                 android:textSize="20sp" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="200.00"
+                android:id="@+id/mine_xinyong"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:drawableRight="@mipmap/sms_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="兼职信用"
                 android:textSize="20sp" />
 
+            <LinearLayout
+                android:id="@+id/mine_yongjin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的佣金"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200.00"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mine_yaoqingma"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="邀请码"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHJFHAOU"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/mine_setting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawableRight="@mipmap/sms_arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="设置"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/mine_yaoqingma"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="1dp"
-            android:background="@color/white"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="邀请码"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SHJFHAOU"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-
-        <TextView
-            android:id="@+id/mine_setting"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:drawableRight="@mipmap/sms_arrow_right"
-            android:gravity="center_vertical"
-            android:paddingLeft="20dp"
-            android:text="设置"
-            android:textSize="20sp" />
-
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
